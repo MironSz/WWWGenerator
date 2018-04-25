@@ -9,9 +9,9 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-            Kraj kraj = new Kraj("C:\\Users\\Miron\\IdeaProjects\\WWWGenerator\\src\\resources\\gm-kraj_gl.csv");
+        Kraj kraj = new Kraj("/home/miron/IdeaProjects/WWWGenerator/src/resources/gm-kraj_gl.csv");
 //            System.out.println(kraj);
-            kraj.createHtml();
+        kraj.createHtml();
 
 
     }

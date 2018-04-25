@@ -1,13 +1,13 @@
 public class Gmi extends Adm {
     public Gmi(String s, String code, int okreg, Adm adm) {
-        super(s,code,okreg,adm);
+        super(s, code, okreg, adm);
     }
 
     protected static String resultToName(Result result) {
         return result.gmina;
     }
 
-    public String whereAreResults(){
+    public String whereAreResults() {
         return "Wyniki  gminia";
     }
 

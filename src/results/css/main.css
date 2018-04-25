@@ -1,0 +1,125 @@
+!*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ *!
+
+!*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *!
+
+!* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== *!
+
+html {
+    color: #22;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#page {
+    width: 100%;
+}
+
+#resultDiv {
+    width: 100%;
+}
+
+#piechart{
+    width: 700px;
+    height: 100%;
+}
+
+
+#resultTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resultTable td, #resultTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#resultTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#resultTable tr:hover {background-color: #ddd;}
+
+#resultTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+ul.listClass {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 60px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 60px;
+    column-count: 4;
+    column-gap: 60px;
+}
+
+
+li.listClass a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.listClass a:hover {
+    background-color: #111111;
+}
+
+
+.flex-container {
+
+  justify-content:  space-around ;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+nav li a.active {
+    color: white;
+    background-color: black;
+}

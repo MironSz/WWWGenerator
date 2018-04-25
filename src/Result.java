@@ -15,9 +15,9 @@ public class Result {
     int authorizied;
     List<Integer> candidatesVotes;
 
-    public Result(String s){
-        s=s.replace("\"","");
-        s.replace(" ","-");
+    public Result(String s) {
+        s = s.replace("\"", "");
+        s.replace(" ", "-");
         candidatesVotes = new LinkedList<>();
         String[] parts = s.split(",");
         okreg = new Integer(parts[0]);
@@ -28,22 +28,26 @@ public class Result {
         allVotes = new Integer(parts[7]);
         incorrectVotes = new Integer(parts[8]);
         correctVotes = new Integer(parts[9]);
-        for(int i=10; i<parts.length;i++){
+        for (int i = 10; i < parts.length; i++) {
             candidatesVotes.add(new Integer(parts[i]));
         }
     }
 
 
-    private Result(){};
-    public Result add(Result result){
+    private Result() {
+    }
+
+    ;
+
+    public Result add(Result result) {
         Result added = new Result();
         added.candidatesVotes = new LinkedList<>();
-        added.correctVotes = correctVotes+result.correctVotes;
-        added.incorrectVotes = incorrectVotes+result.incorrectVotes;
-        added.allVotes = allVotes+result.allVotes;
-        added.authorizied =authorizied+result.authorizied;
-        for(int i = 0; i< candidatesVotes.size(); i ++){
-            added.candidatesVotes.add(candidatesVotes.get(i)+result.candidatesVotes.get(i));
+        added.correctVotes = correctVotes + result.correctVotes;
+        added.incorrectVotes = incorrectVotes + result.incorrectVotes;
+        added.allVotes = allVotes + result.allVotes;
+        added.authorizied = authorizied + result.authorizied;
+        for (int i = 0; i < candidatesVotes.size(); i++) {
+            added.candidatesVotes.add(candidatesVotes.get(i) + result.candidatesVotes.get(i));
         }
         return added;
     }

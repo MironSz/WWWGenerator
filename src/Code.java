@@ -45,7 +45,7 @@ public class Code {
         return keyToPName.get(getP());
     }
 
-    public boolean isInside(Code c){
+    public boolean isInside(Code c) {
         return (c.code.contains(code));
     }
 }

@@ -52,7 +52,7 @@ public class Woj extends Adm {
     }
 
 
-    public String whereAreResults(){
+    public String whereAreResults() {
         return "Wyniki województwo";
 
     }
